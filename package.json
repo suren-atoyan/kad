@@ -16,7 +16,9 @@
     "linter": "./node_modules/.bin/jshint --config .jshintrc ./index.js ./lib ./test",
     "build": "./node_modules/.bin/browserify index.js -s kad -o dist/kad.browser.js",
     "simulation": "node script/simulation.js",
-    "makedoc": "./node_modules/.bin/jsdoc index.js lib -r -R README.md -u doc -c .jsdoc.json --verbose -d ../kadtools.github.io"
+    "makedoc": "./node_modules/.bin/jsdoc index.js lib -r -R README.md -u doc -c .jsdoc.json --verbose -d ../kadtools.github.io",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [
     "dht",
@@ -52,7 +54,8 @@
     "kad-memstore": "0.0.1",
     "lodash": "^4.17.5",
     "merge": "^1.2.0",
-    "ms": "^0.7.0"
+    "ms": "^0.7.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "browserify": "^11.1.0",
@@ -67,5 +70,6 @@
     "pem": "^1.8.1",
     "proxyquire": "^1.7.3",
     "sinon": "^1.14.1"
-  }
+  },
+  "snyk": true
 }
