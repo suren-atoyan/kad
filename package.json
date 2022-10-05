@@ -51,8 +51,8 @@
     "kad-localstorage": "0.0.7",
     "kad-memstore": "0.0.1",
     "lodash": "^4.17.5",
-    "merge": "^1.2.0",
-    "ms": "^0.7.0"
+    "merge": "^2.1.1",
+    "ms": "^2.0.0"
   },
   "devDependencies": {
     "browserify": "^11.1.0",
